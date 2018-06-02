@@ -7,7 +7,7 @@ def oxford_comma(array)
     array.join(" and ")
   else
     array.each_with_index do |str,idx|
-      until idx == array.length - 1
+      unless idx == array.length - 1
         array_with_and << str
       else
         array_with_and << "and #{str}"
